@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 700px;
+    width: 800px;
+    border: 5px solid rgb(163, 3, 3);
+    background: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.gridsize {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    border-color: beige;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colbtn {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border:none;
+    background: white;
+}
+
+.black:focus {
+    background: black;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+}
+
+.random:focus {
+    background: linear-gradient(yellow ,cyan);
+    color: honeydew;
+    transition: 0.2s ease-in-out;
+}
+
+.resetbtn {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background: blue;
+    color: aliceblue;
+}
+
+.resetbtn:active {
+    background: rgb(132, 105, 239);
+    color: black;
+}
+
+.reset {
+    padding: 30px;
+}
