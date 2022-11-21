@@ -2,14 +2,14 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 .container {
     height: 700px;
     width: 800px;
-    border: 5px solid rgb(163, 3, 3);
+    border: 5px solid rgb(161, 25, 25);
     background: red;
     border-radius: 10px;
     display: flex;
@@ -29,7 +29,9 @@ body {
     width: 70px;
     border-radius: 10px;
     border-color: beige;
-
+}
+.popup:active {
+    color: rgb(106, 106, 108);
 }
 
 .header {
@@ -38,17 +40,33 @@ body {
     font-family: monospace;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
+.display {
+    height: 520px;
+    width: 720px;
+    background: rgb(225, 216, 216);
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
 }
 
-.colbtn {
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.resetbtn {
     height: 100px;
     width: 100px;
     border-radius: 50px;
     border:none;
-    background: white;
+    background: rgb(102, 102, 234);
+}
+
+.resetbtn:active {
+    transform: scale(0.96);
+    background: rgb(132, 105, 239);
+    color: rgb(255, 255, 255);
 }
 
 .black:focus {
@@ -63,20 +81,4 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.resetbtn {
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-    border: none;
-    background: blue;
-    color: aliceblue;
-}
 
-.resetbtn:active {
-    background: rgb(132, 105, 239);
-    color: black;
-}
-
-.reset {
-    padding: 30px;
-}
